@@ -1,4 +1,4 @@
 To build gbin's layout:
 
-make keedbio/iris:gbin
+make keebio/iris:gbin
 
