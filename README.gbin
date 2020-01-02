@@ -2,3 +2,5 @@ To build gbin's layout:
 
 make keebio/iris/rev2:gbin
 
+To flash directly:
+make keebio/iris/rev2:gbin:flash
