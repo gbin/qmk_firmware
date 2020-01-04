@@ -122,6 +122,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 qk_tap_dance_action_t tap_dance_actions[] = {};
 
+void keyboard_post_init_user(void) {
+  rgblight_disable();
+  /*
+  rgblight_sethsv(0, 0, 255);
+  rgblight_mode(RGBLIGHT_MODE_STATIC_LIGHT);
+   for(uint16_t i=0; i<256; i++) {
+     wait_ms(5);
+  }
+  */
+}
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case QWERTY:
